@@ -1,0 +1,7 @@
+def isPalindrome(num):
+	numString = str(num)
+	length = len(numString)
+	first_half  = numString[0:length//2]
+	second_half = numString[length//2 if length%2 == 0 else ((length//2)+1):]
+	if (first_half == revString(second_half)):
+		print ("Palindrome found: " + numString)
